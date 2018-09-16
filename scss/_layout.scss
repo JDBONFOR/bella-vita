@@ -1,0 +1,203 @@
+// General
+.page-content {
+    margin-bottom : 15px;
+}
+.bv-btn-primary {
+    @include btn-primary;
+    a { 
+        color: var(--white-text-color);
+    }
+    
+}
+.bv-btn-secondary {
+    @include btn-secondary;
+    position: relative;
+}
+.bv-special-font {
+    font-family : var(--main-title-font);
+}
+.bv-special-italic-font {
+    font-style: italic;
+}
+
+
+
+// Header
+.bv-main-header {
+    .navbar-default {
+        background-image: url(../assets/bkg-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 -80px;
+        height: 110px;
+        border-radius: 0 0 80px 0;
+        position: relative;
+
+        .navbar-collapse {
+            border: none;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+            border-bottom: 1px solid #e3e3e3;
+            border-radius: 0 30px 30px 30px;
+            box-shadow: -2px 4px 10px #e3e3e3;
+        }
+
+        .navbar-header {
+            .navbar-brand {
+                font-family : var(--main-title-font);
+                font-size : 36px;
+                color : var(--white-text-color);
+                padding: 35px 25px;
+                position: relative;
+            }
+            .navbar-toggle {
+                border-color : transparent;
+                padding: 25px 20px;
+                .icon-bar {
+                    background-color : var(--white-text-color);
+                    height : 3px;
+                }
+                &:hover {
+                    background-color: var(--main-color);
+                    border-radius : 50%;
+                }
+            }
+
+            &:before {
+                @include mask;
+                border-radius: 0 0 80px 0;
+            }
+
+        }
+
+        .navbar-nav {
+            padding: 18px;
+            li {
+                a {
+                    color: var(--main-color);
+                    text-decoration: none;
+                }
+                
+                &.active {
+                    a {
+                        color: var(--white-text-color);
+                        background-color: var(--main-color);
+                        box-shadow: 2px 2px 10px var(--main-color);
+                        border-radius: 3px 15px;
+                    }
+                }
+            }            
+            
+        }
+
+    }
+}
+
+// Home Our Section
+.bv-our-wrapper {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    .bv-our-title {
+        @include title;
+    }
+    .bv-our-banner {
+        .bv-our-banner-img {
+            @include bv-out-image;
+            background-image: url(../assets/bkg-our.png);
+           
+        }
+        .bv-our-description {
+            padding: 10px 0;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+// Home Products Section
+.bv-products-wrapper {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    .bv-products-title {
+        @include title;
+    }
+    .bv-products-banner {
+        .bv-product-banner-img {
+            @include bv-out-image;
+            background-image: url(../assets/bkg-productos-banner.jpg);
+        }
+        .bv-products-description {
+            padding: 10px 0;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+
+// Contact Section
+.bv-contact-wrapper {
+    background-image: url(../assets/bkg-contacto.jpg);
+    background-size: cover;
+    background-position: 0 -80px;
+    border-radius: 80px 0 0 0;
+    color: var(--white-text-color);
+    padding-bottom : 15px;
+    position: relative;
+
+    .bv-contact-title {
+        @include title;
+        color : var(--white-text-color);
+        position: relative;
+    }
+    .form-group {
+        position: relative;
+        label {
+            margin-bottom : 10px;
+        }
+    }
+
+    &:before {
+        @include mask;
+        border-radius: 80px 0 0 0;
+    }
+}
+
+// Footer
+.bv-footer {
+    background-color : var(--third-color);
+    color : var(--white-text-color);
+    padding : 15px 0;
+
+    .bv-social-icons {
+        margin-top : 10px;
+        .bv-facebook-icon {
+            @include social-icon;
+            padding: 3px 8px;
+        }
+        .bv-instagram-icon {
+            @include social-icon;
+            padding: 2px 5px;
+        } 
+    }
+    
+}
+
+
+// Productos
+.product-1 {
+    background-image : url('../assets/MixCervecero1.jpg') !important;
+}
+.product-2 {
+    background-image : url('../assets/Almohaditas1.JPG') !important;
+}
+.product-3 {
+    background-image : url();
+}
+.product-4 {
+    background-image : url();
+}
+.product-5 {
+    background-image : url();
+}
