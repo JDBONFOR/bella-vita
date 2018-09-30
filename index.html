@@ -37,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Inicio </a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="productos.html">Productos Destacados</a></li>
                         <li><a href="catalogo.html">Catálogo</a></li>
                         <li><a href="#contacto">Contacto</a></li>
@@ -71,13 +71,6 @@
                             <div class="bv-product-banner-img"></div>
                             <p class="bv-products-description text-justify">
                                 Con <span class="bv-special-font">Bella Vita</span> podes comprar cualquiera de los productos en porciones a tu medida. Elegi 250,500,750, 1 kilo, de acuerdo a tus gustos, formas de consumo y necesidades.
-                                <br>
-                                Los podes incluir en las comidas o de tentempié a media mañana o media tarde.
-                                <br>
-                                Ideales para la oficina, el colegio de los chicos o como complemento de tu tiempo en el gimnasio.
-                            </p>
-                            <p class="bv-products-description text-justify">
-                                    Recordemos, <span class="bv-special-italic-font">SOMOS LO QUE COMEMOS.</span> Por lo tanto te invitamos a disfrutar de una mejor calidad de vida.
                             </p>
                             <p class="bv-products-description text-justify">
                                 <span class="bv-special-font">Bella Vita</span> te brinda productos sanos y te da la oportunidad de que vivas el cambio partiendo por vos. NOSOTROS TE AYUDAMOS.
@@ -91,31 +84,32 @@
                         </article>
                     </section>
                 </div>
-
-                
-                
             </div>
         </div>
     </div>
     <section class="bv-contact-wrapper text-center">
         <div class="container">
-            <h2 id="contacto" class="bv-contact-title">Contáctenos</h2>
-            <!-- BV Form-->
-            <form class="text-left">
-                <div class="form-group">
-                    <label for="name">Nombre y Apellido (*)</label>
-                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu Nombre y Apellido">
+            <div class="row">
+                <h2 id="contacto" class="bv-contact-title">Contáctenos</h2>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <!-- BV Form-->
+                    <form class="text-left">
+                        <div class="form-group">
+                            <label for="name">Nombre y Apellido (*)</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingresa tu Nombre y Apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address (*)</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje / Pedido (*)</label>
+                            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn bv-btn-secondary">Enviar</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email address (*)</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje / Pedido (*)</label>
-                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn bv-btn-secondary">Enviar</button>
-            </form>
+            </div>
         </div>        
     </section>
     <footer class="bv-footer">

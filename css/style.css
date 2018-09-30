@@ -113,14 +113,6 @@ table {
   height: 110px;
   border-radius: 0 0 80px 0;
   position: relative; }
-  .bv-main-header .navbar-default .navbar-collapse {
-    border: none;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #e3e3e3;
-    border-radius: 0 30px 30px 30px;
-    box-shadow: -2px 4px 10px #e3e3e3; }
   .bv-main-header .navbar-default .navbar-header .navbar-brand {
     font-family: var(--main-title-font);
     font-size: 36px;
@@ -154,7 +146,7 @@ table {
   .bv-main-header .navbar-default .navbar-nav {
     padding: 18px; }
     .bv-main-header .navbar-default .navbar-nav li a {
-      color: var(--main-color);
+      color: var(--white-text-color);
       text-decoration: none; }
     .bv-main-header .navbar-default .navbar-nav li.active a {
       color: var(--white-text-color);
@@ -187,8 +179,10 @@ table {
 
 .bv-products-wrapper {
   border-bottom: 1px solid #e3e3e3;
-  padding-bottom: 15px;
-  margin-bottom: 15px; }
+  padding: 0 7px 15px 7px;
+  margin-bottom: 15px;
+  min-height: 400px;
+  position: relative; }
   .bv-products-wrapper .bv-products-title {
     font-family: var(--main-title-font);
     font-size: 24px;
@@ -207,6 +201,11 @@ table {
     padding: 10px 0;
     font-size: 16px;
     line-height: 18px; }
+
+#highlightproducts .btn {
+  position: absolute;
+  bottom: 25px;
+  left: 40%; }
 
 .bv-contact-wrapper {
   background-image: url(../assets/bkg-contacto.jpg);
@@ -275,18 +274,29 @@ table {
   background-image: url("../assets/Almohaditas1.JPG") !important; }
 
 .product-3 {
-  background-image: url(); }
+  background-image: url("../assets/mixEnergetico.jpg") !important; }
 
 .product-4 {
-  background-image: url(); }
+  background-image: url("../assets/mixSemillas.jpg") !important; }
 
 .product-5 {
-  background-image: url(); }
+  background-image: url("../assets/mixOtros.JPG") !important; }
 
-/* Smaller than standard 960 (devices and browsers) */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 768px) {
+  .bv-main-header .navbar-default .navbar-header .navbar-brand {
+    font-size: 28px; }
+  .bv-main-header .navbar-default .navbar-nav {
+    font-size: 15px; } }
+@media only screen and (max-width: 425px) {
+  .bv-main-header .navbar-default .navbar-collapse {
+    border: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #e3e3e3;
+    border-radius: 0 30px 30px 30px;
+    box-shadow: -2px 4px 10px #e3e3e3; }
+  .bv-main-header .navbar-default .navbar-nav li a {
+    color: var(--main-color); } }
 
 /*# sourceMappingURL=style.css.map */

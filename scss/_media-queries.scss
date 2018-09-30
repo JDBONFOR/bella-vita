@@ -1,15 +1,39 @@
-    /* Smaller than standard 960 (devices and browsers) */
-    
-    @media only screen and (max-width: 1152px) {}
-    /* Tablet Portrait size to standard 960 (devices and browsers) */
-    
-    @media only screen and (min-width: 768px) and (max-width: 1152px) {}
-    /* All Mobile Sizes (devices and browser) */
-    
-    @media only screen and (max-width: 767px) {}
-    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    
-    @media only screen and (min-width: 480px) and (max-width: 767px) {}
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    
-    @media only screen and (max-width: 479px) {}
+    @media only screen and (max-width: 1024px) {}
+    @media only screen and (max-width: 768px) {
+        .bv-main-header {
+            .navbar-default {
+                .navbar-header {
+                    .navbar-brand {
+                        font-size : 28px;
+                    }
+                }
+                .navbar-nav {
+                    font-size : 15px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        .bv-main-header {
+            .navbar-default {
+                .navbar-collapse {
+                    border: none;
+                    background-color: #fff;
+                    position: relative;
+                    z-index: 1;
+                    border-bottom: 1px solid #e3e3e3;
+                    border-radius: 0 30px 30px 30px;
+                    box-shadow: -2px 4px 10px #e3e3e3;
+                }
+                .navbar-nav {
+                    li {
+                        a {
+                            color: var(--main-color);
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    @media only screen and (min-width: 375px) {}
+    @media only screen and (max-width: 320px) {}
